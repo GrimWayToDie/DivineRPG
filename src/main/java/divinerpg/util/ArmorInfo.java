@@ -54,7 +54,9 @@ public class ArmorInfo {
             mortInfo = new ArmorInfo(getArmorInfo("night_vision")),
             halInfo = new ArmorInfo(getArmorInfo("melee_damage", 16)),
             awakened_halInfo = new ArmorInfo(getArmorInfo("melee_damage", 20),
-                                             getArmorInfo("ranged_damage", 50)),
+                                             getArmorInfo("ranged_damage", 100),
+                                             getArmorInfo("fly"),
+                                             getArmorInfo("no_fall")),
 
             //Vethea
             basicHelmInfo = new ArmorInfo(getArmorInfo("melee_protection", 15)),
