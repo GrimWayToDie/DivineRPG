@@ -78,23 +78,23 @@ public class ArmorAbilitiesEvent {
         		if(attacker.hasEffect(MobEffectRegistry.HALITE_STRENGTH.get()))
 					event.setAmount(amount + CombatRules.getDamageAfterAbsorb(16, target.getArmorValue(), (float)target.getAttributeValue(Attributes.ARMOR_TOUGHNESS)));
         		else if(attacker.hasEffect(MobEffectRegistry.DIVINE_STRENGTH.get()) || attacker.hasEffect(MobEffectRegistry.DEMONIZED_HELMET.get()))
-					event.setAmount(amount + CombatRules.getDamageAfterAbsorb(6, target.getArmorValue(), (float)target.getAttributeValue(Attributes.ARMOR_TOUGHNESS)));
+					event.setAmount(amount + CombatRules.getDamageAfterAbsorb(10, target.getArmorValue(), (float)target.getAttributeValue(Attributes.ARMOR_TOUGHNESS)));
         		else if(attacker.hasEffect(MobEffectRegistry.GLISTENING_HELMET.get()))
 					event.setAmount(amount + CombatRules.getDamageAfterAbsorb(3, target.getArmorValue(), (float)target.getAttributeValue(Attributes.ARMOR_TOUGHNESS)));
         		else if(attacker.hasEffect(MobEffectRegistry.SENG_FUR.get()))
-					event.setAmount(amount + CombatRules.getDamageAfterAbsorb(2, target.getArmorValue(), (float)target.getAttributeValue(Attributes.ARMOR_TOUGHNESS)));
+					event.setAmount(amount + CombatRules.getDamageAfterAbsorb(20, target.getArmorValue(), (float)target.getAttributeValue(Attributes.ARMOR_TOUGHNESS)));
         		else if(attacker.hasEffect(MobEffectRegistry.TORMENTED_HELMET.get()))
 					event.setAmount(amount + CombatRules.getDamageAfterAbsorb(9, target.getArmorValue(), (float)target.getAttributeValue(Attributes.ARMOR_TOUGHNESS)));
         		else if(attacker.hasEffect(MobEffectRegistry.AWAKENED_HALITE_STRENGTH.get()))
 					event.setAmount(amount + CombatRules.getDamageAfterAbsorb(20, target.getArmorValue(), (float)target.getAttributeValue(Attributes.ARMOR_TOUGHNESS)));
         	} else if((attacker.hasEffect(MobEffectRegistry.AWAKENED_HALITE_STRENGTH.get()) || attacker.hasEffect(MobEffectRegistry.CORRUPTED_STRENGTH.get()))
 					&& (source.is(DamageTypes.MOB_PROJECTILE) || source.is(DamageTypes.ARROW) || source.is(DamageTypes.THROWN) || source.is(DamageTypes.TRIDENT)))
-				event.setAmount(amount * 1.5F);
+				event.setAmount(amount * 2.0F);
         } if(target instanceof Player) {
             if((target.hasEffect(MobEffectRegistry.PROJECTILE_PROTECTION.get()) && (source.is(DamageTypes.MOB_PROJECTILE) || source.is(DamageTypes.ARROW) || source.is(DamageTypes.THROWN) || source.is(DamageTypes.TRIDENT)))) {
-				event.setAmount(event.getAmount() * .34F);
+				event.setAmount(event.getAmount() * .1F);
 			} else if(target.hasEffect(MobEffectRegistry.MELEE_PROTECTION.get()) && (source.is(DamageTypes.MOB_ATTACK) || source.is(DamageTypes.PLAYER_ATTACK) || source.is(DamageTypes.GENERIC)) && !source.is(DamageTypes.MOB_PROJECTILE)) {
-                event.setAmount(event.getAmount() * .67F);
+                event.setAmount(event.getAmount() * .5F);
             } else if(target.hasEffect(MobEffectRegistry.SENG_FUR.get())) {
             	event.setAmount(event.getAmount() * .7F);
             } else if((target.hasEffect(MobEffectRegistry.DEGRADED_HOOD.get()) && source.is(DamageTypes.MAGIC))
