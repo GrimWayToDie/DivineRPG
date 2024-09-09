@@ -16,7 +16,7 @@ public class ArmorInfo {
             bedrockInfo = new ArmorInfo(getArmorInfo("fire_protection"),
                                         getArmorInfo("explosion_protection")),
             corruptedInfo = new ArmorInfo(getArmorInfo("ranged_damage", 100)),
-            divineInfo = new ArmorInfo(getArmorInfo("melee_damage", 6),
+            divineInfo = new ArmorInfo(getArmorInfo("melee_damage", 10),
                                        getArmorInfo("jump_height", 2),
                                        getArmorInfo("no_fall")),
             eliteRealmiteInfo = new ArmorInfo(getArmorInfo("no_fall")),
@@ -28,7 +28,7 @@ public class ArmorInfo {
             krakenInfo = new ArmorInfo(getArmorInfo("conduit_power"),
                                        getArmorInfo("swim")),
             terranInfo = new ArmorInfo(getArmorInfo("haste")),
-            rupeeInfo = new ArmorInfo(getArmorInfo("melee_protection", 33)),
+            rupeeInfo = new ArmorInfo(getArmorInfo("melee_protection", 50)),
             shadowInfo = new ArmorInfo(getArmorInfo("step_assist"),
                                        getArmorInfo("speed", 4)),
             skelemanInfo = new ArmorInfo(getArmorInfo("hunger")),
@@ -36,7 +36,7 @@ public class ArmorInfo {
 
             //Iceika
             sengFurInfo = new ArmorInfo(getArmorInfo("hunger"),
-                                        getArmorInfo("melee_damage", 2),
+                                        getArmorInfo("melee_damage", 20),
                                         getArmorInfo("melee_protection", 30),
                                         getArmorInfo("speed", 2))
                                         .withDimension("iceika"),
