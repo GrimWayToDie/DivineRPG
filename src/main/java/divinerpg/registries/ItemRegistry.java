@@ -879,7 +879,7 @@ public class ItemRegistry {
             halite_leggings = registerItem("halite_leggings", () -> new ItemDivineArmor(RarityList.HALITE, ArmorStats.HALITE, ArmorItem.Type.LEGGINGS, ArmorInfo.halInfo)),
             halite_boots = registerItem("halite_boots", () -> new ItemDivineArmor(RarityList.HALITE, ArmorStats.HALITE, ArmorItem.Type.BOOTS, ArmorInfo.halInfo)),
 
-    awakened_halite_helmet = registerItem("awakened_halite_helmet", () -> new ItemDivineArmor(RarityList.AWAKENED_HALITE, ArmorStats.AWAKENED_HALITE, ArmorItem.Type.HELMET, ArmorInfo.awakened_halInfo, AWAKENED_HALITE_STRENGTH.get())),
+    awakened_halite_helmet = registerItem("awakened_halite_helmet", () -> new ItemDivineArmor(RarityList.AWAKENED_HALITE, ArmorStats.AWAKENED_HALITE, ArmorItem.Type.HELMET, ArmorInfo.awakened_halInfo, AWAKENED_HALITE_STRENGTH.get(), PREVENT_FALL_DAMAGE.get(), ANGELIC_FLIGHT.get())),
             awakened_halite_chestplate = registerItem("awakened_halite_chestplate", () -> new ItemDivineArmor(RarityList.AWAKENED_HALITE, ArmorStats.AWAKENED_HALITE, ArmorItem.Type.CHESTPLATE, ArmorInfo.awakened_halInfo)),
             awakened_halite_leggings = registerItem("awakened_halite_leggings", () -> new ItemDivineArmor(RarityList.AWAKENED_HALITE, ArmorStats.AWAKENED_HALITE, ArmorItem.Type.LEGGINGS, ArmorInfo.awakened_halInfo)),
             awakened_halite_boots = registerItem("awakened_halite_boots", () -> new ItemDivineArmor(RarityList.AWAKENED_HALITE, ArmorStats.AWAKENED_HALITE, ArmorItem.Type.BOOTS, ArmorInfo.awakened_halInfo)),
