@@ -12,7 +12,7 @@ public enum ToolStats implements Tier {
     AQUA_DAGGER(2, 535, -2, 3.5F, 12, ItemRegistry.aquatic_ingot.get()),
     AQUA_MAUL(2, 1058, -2.7F, 9.2F, 10, ItemRegistry.aquatic_ingot.get()),
     AQUA_TRIDENT(2, 843, -2.4F, 6, 10, ItemRegistry.aquatic_ingot.get()),
-    ARCANITE_BLADE(4, 2048, -2.4F, 2, 15, ItemRegistry.arcanium.get(), SwordSpecial.ARCANA_DAMAGE,20, 0),
+    ARCANITE_BLADE(4, 2048, -2.4F, 2, 15, ItemRegistry.arcanium.get(), SwordSpecial.ARCANA_DAMAGE,30, 0),
     ARCANIUM_SABER(3, -2.4F, 2, SwordSpecial.ARCANA_DAMAGE, 14, 0),
     ARLEMITE_STABBER(3, 1535, -2.4F, 5, 10, ItemRegistry.arlemite_ingot.get()),
     BEDROCK_MAUL(4, -2.7F, 11.5F),
