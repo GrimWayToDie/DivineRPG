@@ -23,7 +23,7 @@ public class ArmorInfo {
             enderInfo = new ArmorInfo(getArmorInfo("explosion_protection")),
             fireInfo = new ArmorInfo(getArmorInfo("fire_protection")),
             frozenInfo = new ArmorInfo(getArmorInfo("freeze", 6)),
-            jackomanInfo = new ArmorInfo(getArmorInfo("scythe_damage", 3)),
+            jackomanInfo = new ArmorInfo(getArmorInfo("scythe_damage", 5)),
             jungleInfo = new ArmorInfo(getArmorInfo("poison_protection")),
             krakenInfo = new ArmorInfo(getArmorInfo("conduit_power"),
                                        getArmorInfo("swim")),
