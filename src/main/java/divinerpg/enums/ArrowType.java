@@ -12,7 +12,7 @@ public enum ArrowType {
     SOULFIRE_ARROW(2, ProjectileLoc("soulfire_arrow"), ArrowSpecial.EXPLODE),
     INFERNO_ARROW(2, ProjectileLoc("inferno_arrow"), ArrowSpecial.FLAME, 12),
     ICICLE_ARROW(2, ProjectileLoc("icicle_arrow"), Items.ARROW),
-    SNOWSTORM_ARROW(2, ProjectileLoc("snowstorm_arrow"), ArrowSpecial.EXPLODE),
+    SNOWSTORM_ARROW(10, ProjectileLoc("snowstorm_arrow"), ArrowSpecial.EXPLODE),
     EDEN_ARROW(6, ProjectileLoc("eden_arrow"), ItemRegistry.eden_arrow.get()),
     LESSER_WILDWOOD_ARROW(6, ProjectileLoc("wildwood_arrow"), ItemRegistry.wildwood_arrow.get()),
     GREATER_WILDWOOD_ARROW(10, ProjectileLoc("wildwood_arrow"), ItemRegistry.wildwood_arrow.get()),
